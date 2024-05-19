@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<form action="http://temp-data-asteks.obs.la-north-2.myhuaweicloud.com" method="post" enctype="multipart/form-data">
+Object key
+<!-- Object name -->
+<input type="text" name="key" value="objectname" />
+<p>
+ACL
+<!-- Object ACL -->
+<input type="text" name="x-obs-acl" value="public-read" />
+<p>
+Content-Type
+<!-- Object MIME type -->
+<input type="text" name="content-type" value="text/plain" />
+<p>
+<!-- Base64-coded policy -->
+<input type="hidden" name="policy" value="*** Provide your policy ***" />
+<!-- AK -->
+<input type="hidden" name="AccessKeyId" value="UQJZ4M9B27QATZKMSYUV"/>
+<!-- Signature string -->
+<input type="hidden" name="signature" value="*** Provide your signature ***"/>
+
+<input name="file" type="file" />
+<input name="submit" value="Upload" type="submit" />
+</form>
+</body>
+</html>
